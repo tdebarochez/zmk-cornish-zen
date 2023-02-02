@@ -48,9 +48,9 @@
 // | SHFT/Z  |  CTRL/X  |  ALT/C  |  V  |  B      |   |  N      |  M      | ALT/, | CTRL/. |  SHFT//  |
 //                                 |  RAISE  | ALT | SPC/GUI |   | ENT/GUI | LWR/TAB | BKSP  |
                         bindings = <
-   &lt RAISE ESC &hm LCTRL FR_Q  &kp FR_W        &kp FR_F      &kp FR_P  &kp FR_G         &kp FR_J       &kp FR_L       &kp FR_U         &kp FR_Y         &hm RCTRL FR_SCLN  &kp FR_BSLS
-   &hm LSHFT TAB &kp FR_A        &kp FR_R        &kp FR_S      &kp FR_T  &kp FR_D         &kp FR_H       &kp FR_N       &kp FR_E         &kp FR_I         &kp FR_O           &kp FR_QUOT
-   &kp LCTRL     &hm LSHFT FR_Z  &hm LCTRL FR_X  &hm LALT FR_C &kp FR_V  &kp FR_B         &kp FR_K       &kp FR_M       &hm RALT FR_COMM &hm RCTRL FR_DOT &hm RSHFT FR_SLSH  &kp FR_MINUS
+   &hm LCTRL FR_Q  &kp FR_W        &kp FR_F      &kp FR_P  &kp FR_G         &kp FR_J       &kp FR_L       &kp FR_U         &kp FR_Y         &hm RCTRL FR_SCLN  
+   &kp FR_A        &kp FR_R        &kp FR_S      &kp FR_T  &kp FR_D         &kp FR_H       &kp FR_N       &kp FR_E         &kp FR_I         &kp FR_O           
+   &hm LSHFT FR_Z  &hm LCTRL FR_X  &hm LALT FR_C &kp FR_V  &kp FR_B         &kp FR_K       &kp FR_M       &hm RALT FR_COMM &hm RCTRL FR_DOT &hm RSHFT FR_SLSH  
                                                  &mo RAISE     &kp LALT  &hm LGUI SPACE   &hm LGUI RET   &lt LOWER TAB  &mo NUM
                         >;
 
