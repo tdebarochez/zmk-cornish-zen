@@ -48,16 +48,16 @@
                 default_layer {
                         label = "default";
 
-// ----------------------------------------------------------------------------------------------------
-// | Q       |  W       |  F      |  P  |  G      |   |  J      |  L      |  U    |  Y     |  ;       |
-// | A       |  R       |  S      |  T  |  D      |   |  H      |  N      |  E    |  I     |  O       |
-// | SHFT/Z  |  CTRL/X  |  ALT/C  |  V  |  B      |   |  N      |  M      | ALT/, | CTRL/. |  SHFT//  |
-//                      |  RAISE  | ALT | SPC/GUI |   | ENT/GUI | LWR/TAB | BKSP  |
+// ------------------------------------------------------------------------------------------------
+// | Q       |  W       |  F      |  P  |  G      |   |  J      |  L  |  U    |  Y     |  ;       |
+// | A       |  R       |  S      |  T  |  D      |   |  H      |  N  |  E    |  I     |  O       |
+// | SHFT/Z  |  CTRL/X  |  ALT/C  |  V  |  B      |   |  N      |  M  | ALT/, | CTRL/. |  SHFT//  |
+//                      |  RAISE  | ALT | SPC/GUI |   | ENT/GUI | LWR | BKSP  |
                         bindings = <
-   &kp FR_Q        &kp FR_W        &kp FR_F      &kp FR_P  &kp FR_G         &kp FR_J       &kp FR_L       &kp FR_U         &kp FR_Y         &kp FR_SCLN  
-   &kp FR_A        &kp FR_R        &kp FR_S      &kp FR_T  &kp FR_D         &kp FR_H       &kp FR_N       &kp FR_E         &kp FR_I         &kp FR_O           
-   &hm LSHFT FR_Z  &hm LCTRL FR_X  &hm LALT FR_C &kp FR_V  &kp FR_B         &kp FR_K       &kp FR_M       &hm RALT FR_COMM &hm RCTRL FR_DOT &hm RSHFT FR_SLSH  
-                                   &mo RAISE     &kp LALT  &hm LGUI SPACE   &hm LGUI RET   &lt LOWER TAB  &mo NUM
+   &kp FR_Q        &kp FR_W        &kp FR_F      &kp FR_P  &kp FR_G         &kp FR_J       &kp FR_L    &kp FR_U         &kp FR_Y         &kp FR_SCLN  
+   &kp FR_A        &kp FR_R        &kp FR_S      &kp FR_T  &kp FR_D         &kp FR_H       &kp FR_N    &kp FR_E         &kp FR_I         &kp FR_O           
+   &hm LSHFT FR_Z  &hm LCTRL FR_X  &hm LALT FR_C &kp FR_V  &kp FR_B         &kp FR_K       &kp FR_M    &hm RALT FR_COMM &hm RCTRL FR_DOT &hm RSHFT FR_SLSH  
+                                   &mo RAISE     &kp LALT  &hm LGUI SPACE   &hm LGUI RET   &mo LOWER   &mo NUM
                         >;
 
                 };
@@ -116,7 +116,7 @@
 // |  |  |      |     |         |   |  -      | è/7     | !/8 | ç/9 | BSPC |
 // |  |  |      |     |         |   |  +      | '/4     | (/5 | §/6 | *    |
 // |  |  |      |     |         |   | à/0     | &/1     | é/2 | "/3 | /    |
-//    |  | ALT | SPC/GUI |   | ENT/GUI | LWR/TAB | DEL |
+//       |      | ALT | SPC/GUI |   | ENT/GUI | LWR/TAB | DEL |
                         bindings = <
    &none  &none  &none      &none     &none           &kp FR_MINUS  &kp FR_7       &kp FR_8  &kp FR_9  &kp BSPC     
    &none  &none  &none      &none     &none           &kp FR_PLUS   &kp FR_4       &kp FR_5  &kp FR_6  &kp FR_ASTR  
