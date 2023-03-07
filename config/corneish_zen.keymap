@@ -48,7 +48,7 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
-                                , <&macro_tap &kp Q>
+                                , <&macro_tap &kp FR_Q>
                                 , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
                                 ;
                 };
@@ -58,7 +58,7 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
-                                , <&macro_tap &kp W>
+                                , <&macro_tap &kp FR_W>
                                 , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
                                 ;
                 };
@@ -68,7 +68,7 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
-                                , <&macro_tap &kp F>
+                                , <&macro_tap &kp FR_F>
                                 , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
                                 ;
                 };
@@ -78,7 +78,7 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
-                                , <&macro_tap &kp P>
+                                , <&macro_tap &kp FR_P>
                                 , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
                                 ;
                 };
@@ -88,7 +88,7 @@
                         #binding-cells = <0>;
                         bindings
                                 = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
-                                , <&macro_tap &kp G>
+                                , <&macro_tap &kp FR_G>
                                 , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
                                 ;
                 };
