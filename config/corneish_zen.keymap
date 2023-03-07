@@ -92,6 +92,26 @@
                                 , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
                                 ;
                 };
+                show_emojis: show_emojis {
+                        label = "ZM_show_emojis";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LCTRL &kp LGUI>
+                                , <&macro_tap &kp SPACE>
+                                , <&macro_release &kp LCTRL &kp LGUI>
+                                ;
+                };
+                screen_capture: screen_capture {
+                        label = "ZM_screen_capture";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LSHFT &kp LCTRL &kp LGUI>
+                                , <&macro_tap &kp FR_4>
+                                , <&macro_release &kp LSHFT &kp LCTRL &kp LGUI>
+                                ;
+                };
         };
 
         keymap {
@@ -170,10 +190,10 @@
 // |     |       |      |       |         |   | à/0     | &/1     | é/2 | "/3 | /    |
 //               |      | ALT   | SPC/GUI |   | ENT/GUI | LWR/TAB | DEL |
                         bindings = <
-   &focus_arc &focus_slack &focus_mail &focus_term &focus_vscode   &kp FR_MINUS  &kp FR_7       &kp FR_8  &kp FR_9  &kp BSPC     
-   &none      &none        &none       &none       &none           &kp FR_PLUS   &kp FR_4       &kp FR_5  &kp FR_6  &kp FR_ASTR  
-   &none      &none        &none       &none       &none           &kp FR_0      &kp FR_1       &kp FR_2  &kp FR_3  &kp FR_SLSH  
-                           &kp LSHFT   &kp LALT    &hm LGUI SPACE  &hm LGUI RET  &lt LOWER TAB  &kp DEL
+   &focus_arc    &focus_slack     &focus_mail &focus_term &focus_vscode   &kp FR_MINUS  &kp FR_7       &kp FR_8  &kp FR_9  &kp BSPC     
+   &show_emojis  &screen_capture  &none       &none       &none           &kp FR_PLUS   &kp FR_4       &kp FR_5  &kp FR_6  &kp FR_ASTR  
+   &none         &none            &none       &none       &none           &kp FR_0      &kp FR_1       &kp FR_2  &kp FR_3  &kp FR_SLSH  
+                                  &kp LSHFT   &kp LALT    &hm LGUI SPACE  &hm LGUI RET  &lt LOWER TAB  &kp DEL
                         >;
                 };
         };
