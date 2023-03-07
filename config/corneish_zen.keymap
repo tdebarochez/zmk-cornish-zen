@@ -41,6 +41,58 @@
                         bindings = <&kp TAB>;
                 };
         };
+        macros {
+                focus_arc: focus_arc {
+                        label = "ZM_focus_arc";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                , <&macro_tap &kp Q>
+                                , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                ;
+                };
+                focus_slack: focus_slack {
+                        label = "ZM_focus_slack";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                , <&macro_tap &kp W>
+                                , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                ;
+                };
+                focus_mail: focus_mail {
+                        label = "ZM_focus_mail";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                , <&macro_tap &kp F>
+                                , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                ;
+                };
+                focus_term: focus_term {
+                        label = "ZM_focus_term";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                , <&macro_tap &kp P>
+                                , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                ;
+                };
+                focus_vscode: focus_vscode {
+                        label = "ZM_focus_vscode";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings
+                                = <&macro_press &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                , <&macro_tap &kp G>
+                                , <&macro_release &kp LSHFT &kp LCTRL &kp LALT &kp LGUI>
+                                ;
+                };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -113,15 +165,15 @@
                         label = "num";
 
 // -------------------------------------------------------------------------
-// |  |  |      |     |         |   |  -      | è/7     | !/8 | ç/9 | BSPC |
-// |  |  |      |     |         |   |  +      | '/4     | (/5 | §/6 | *    |
-// |  |  |      |     |         |   | à/0     | &/1     | é/2 | "/3 | /    |
-//       |      | ALT | SPC/GUI |   | ENT/GUI | LWR/TAB | DEL |
+// | Arc | Slack | Mail | iTerm |  VScode |   |  -      | è/7     | !/8 | ç/9 | BSPC |
+// |     |       |      |       |         |   |  +      | '/4     | (/5 | §/6 | *    |
+// |     |       |      |       |         |   | à/0     | &/1     | é/2 | "/3 | /    |
+//               |      | ALT   | SPC/GUI |   | ENT/GUI | LWR/TAB | DEL |
                         bindings = <
-   &none  &none  &none      &none     &none           &kp FR_MINUS  &kp FR_7       &kp FR_8  &kp FR_9  &kp BSPC     
-   &none  &none  &none      &none     &none           &kp FR_PLUS   &kp FR_4       &kp FR_5  &kp FR_6  &kp FR_ASTR  
-   &none  &none  &none      &none     &none           &kp FR_0      &kp FR_1       &kp FR_2  &kp FR_3  &kp FR_SLSH  
-                 &kp LSHFT  &kp LALT  &hm LGUI SPACE  &hm LGUI RET  &lt LOWER TAB  &kp DEL
+   &focus_arc &focus_slack &focus_mail &focus_term &focus_vscode   &kp FR_MINUS  &kp FR_7       &kp FR_8  &kp FR_9  &kp BSPC     
+   &none      &none        &none       &none       &none           &kp FR_PLUS   &kp FR_4       &kp FR_5  &kp FR_6  &kp FR_ASTR  
+   &none      &none        &none       &none       &none           &kp FR_0      &kp FR_1       &kp FR_2  &kp FR_3  &kp FR_SLSH  
+                           &kp LSHFT   &kp LALT    &hm LGUI SPACE  &hm LGUI RET  &lt LOWER TAB  &kp DEL
                         >;
                 };
         };
