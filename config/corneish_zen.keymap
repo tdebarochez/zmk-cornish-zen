@@ -185,10 +185,10 @@
                         label = "num";
 
 // -------------------------------------------------------------------------
-// | Arc | Slack | Mail | iTerm |  VScode |   |  -      | 7       | 8 | 9 | BSPC |
-// |     |       |      |       |         |   |  +      | 4       | 5 | 6 | *    |
-// |     |       |      |       |         |   |  0      | 1       | 2 | 3 | /    |
-//               |      | ALT   | SPC/GUI |   | ENT/GUI | LWR/TAB |   |
+// | Arc | Slack          | Mail | iTerm |  VScode |   |  -      | 7       | 8 | 9 | BSPC |
+// | 👻  | Screen Capture |      |       |         |   |  +      | 4       | 5 | 6 | *    |
+// |     |                |      |       |         |   |  0      | 1       | 2 | 3 | /    |
+//                        |      | ALT   | SPC/GUI |   | ENT/GUI | LWR/TAB |   |
                         bindings = <
    &focus_arc    &focus_slack     &focus_mail &focus_term &focus_vscode   &kp FR_MINUS  &kp FR_7       &kp FR_8  &kp FR_9  &kp BSPC     
    &show_emojis  &screen_capture  &none       &none       &none           &kp FR_PLUS   &kp FR_4       &kp FR_5  &kp FR_6  &kp FR_ASTR  
